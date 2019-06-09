@@ -18,6 +18,8 @@ Search by program name example
 
 ## 2. Java
 
+Use Netbeans or
+
 Prepare build folder
 
     cd PingApplication
