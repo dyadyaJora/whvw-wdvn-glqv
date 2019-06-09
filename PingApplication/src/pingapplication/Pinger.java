@@ -7,13 +7,23 @@ import java.net.SocketTimeoutException;
 import java.net.UnknownHostException;
 
 /**
- *
+ * Class implements base functionality 
+ * of checking server's availability
+ * 
  * @author dyadyajora
  */
 public class Pinger {
+    /** Timeout for TCP connection in milliseconds */
     static final int MAX_CONNECTION_TIMEOUT_MS = 5000;
+    
+    /** Destination port value */
     static final int TARGET_PORT = 8080;
     
+    /**
+     * 
+     * @param serverName server's name (ip or dns)
+     * @return Connection avialability
+     */
     public static boolean isAvailable(String serverName) {
         Socket socket = new Socket();
         boolean available = false;
